@@ -1,17 +1,14 @@
 package projet_java;
 
-public class Soigneur extends Card{
-    public Soigneur(String name, int mana, int attaque, int pv, Boolean visible, String pouvoir) {
-        super(name, mana, attaque, pv, visible, pouvoir);
+public class Soigneur extends MonstreInterface {
+
+    public Soigneur(String nom, int pv, int attaque) {
+        super(nom, pv, attaque);
     }
 
     @Override
-    public void setAttaque(int attaque) {
-        super.setAttaque(0);
+    public void soigner(Monstre cible, int pointsDeVie) {
+        cible.setPv(cible.getPv() + pointsDeVie);
     }
 
-    @Override
-    public void setPouvoir(String pouvoir) {
-        super.setPouvoir("soins");
-    }
 }

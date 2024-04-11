@@ -1,8 +1,13 @@
 package projet_java;
 
-public class Guerrier extends Card{
+public class Guerrier extends MonstreInterface {
 
-    public Guerrier(String name, int mana, int attaque, int pv, Boolean visible, String pouvoir) {
-        super(name, mana, attaque, pv, visible, pouvoir);
+    public Guerrier(String nom, int pv, int attaque) {
+        super(nom, pv, attaque);
+    }
+
+    @Override
+    public void attaquer(Monstre cible) {
+        cible.setPv(cible.getPv() - getAttaque());
     }
 }

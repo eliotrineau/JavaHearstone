@@ -1,12 +1,13 @@
 package projet_java;
 
-public class Protecteur extends Card{
-    public Protecteur(String name, int mana, int attaque, int pv, Boolean visible, String pouvoir) {
-        super(name, mana, attaque, pv, visible, pouvoir);
+public class Protecteur extends MonstreInterface {
+
+    public Protecteur(String nom, int pv, int attaque) {
+        super(nom, pv, attaque);
     }
 
-    @Override
-    public void setPouvoir(String pouvoir) {
-        super.setPouvoir("protection");
+    public void empecherAttaque(Monstre cible) {
+        cible.setPeutAttaquer(false);
     }
 }
+

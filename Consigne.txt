@@ -1,4 +1,4 @@
-Criète :
+Critère :
 Plateau 2 joueur s'affronte
 Jouer caractériser par ID,Nom,Nb PV,Capacité Special.
 Joueur ne pas pas lui meme attaquer (sauf capacité spécial)
@@ -50,17 +50,14 @@ Première ligne doit écrire Noms Prénoms du binome
 A Faire:
 
 les 5 test unitaires
-l'interface demander
-les capacité special des unités
-faire au moins 3 deck au taol et faire en sorte que le joueur choissis sont deck
-faire que le joueur puisse attaquer avec plusieurs monstre/faire plusieurs capacité/poser plusieurs monstre dans le meme tour
+l'interface demandé
+les capacités speciales des unités
+faire que le joueur puisse attaquer avec plusieurs monstre/faire plusieurs capacités/poser plusieurs monstres dans le même tour
 
 
 Le jeu marche en soit il manque ca pour qu'on ai une bonne note,
 Priorité sur les test unitaire et l'interface parce que obligatoire,
 Ensutie les capacité
-ensuite les deck
-et si t'as le temps le faite de poser differentes cartes/attaquer avec different monstre tous ca le meme tour
 
 
 
