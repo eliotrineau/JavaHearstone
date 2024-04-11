@@ -15,8 +15,14 @@ public class MonstreBasique implements MonstreInterface {
 
     @Override
     public void attaquer(MonstreInterface cible) {
-        cible.soin(new Soin(-statAttaque, null));
+        cible.soigner(new Soin(-statAttaque, null));
     }
+
+    @Override
+    public void soigner(MonstreInterface cible) {    }
+
+    @Override
+    public void booster(MonstreInterface cible) {    }
 
     @Override
     public int getStatAttaque() {
@@ -47,6 +53,9 @@ public class MonstreBasique implements MonstreInterface {
     public boolean isBoost() {
         return false;
     }
+
+    @Override
+    public void soigner(MonstreBasique cible, int pointsDeVie) {    }
 
     public boolean peutAttaquer() {
         return peutAttaquer;

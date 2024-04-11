@@ -1,6 +1,6 @@
 package projet_java;
 
-public class Protecteur extends MonstreInterface {
+public class Protecteur extends Card {
 
     public Protecteur(String nom, int pv, int attaque) {
         super(nom, pv, attaque);

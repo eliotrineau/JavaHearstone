@@ -1,3 +1,5 @@
+package projet_java;
+
 public interface MonstreInterface {
     void attaquer(MonstreInterface cible);
     void soigner(MonstreInterface cible);
@@ -8,4 +10,7 @@ public interface MonstreInterface {
     boolean isProtecteur();
     boolean isSoigneur();
     boolean isBoost();
+    void soigner(MonstreBasique cible, int pointsDeVie);
+
+    void soigner(Monstre cible, int pointsDeVie);
 }

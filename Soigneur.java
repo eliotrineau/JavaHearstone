@@ -7,8 +7,8 @@ public class Soigneur extends MonstreInterface {
     }
 
     @Override
-    public void soigner(Monstre cible, int pointsDeVie) {
-        cible.setPv(cible.getPv() + pointsDeVie);
+    public void soigner(MonstreBasique cible, int pointsDeVie) {
+        cible.getStatAttaque(cible.getStatVie() + pointsDeVie);
     }
 
 }
