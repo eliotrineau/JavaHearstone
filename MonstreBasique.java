@@ -1,6 +1,6 @@
 package projet_java;
 
-public class GuerrierMonstre implements MonstreInterface {
+public class MonstreBasique implements MonstreInterface {
     private final String nom;
     private int statAttaque;
     private int statVie;
