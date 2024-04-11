@@ -4,15 +4,15 @@ public class Champion {
     private String nom;
     private int id;
     private int statVie;
-    private SpecialAbility pouvoir;
+    private capaciteSpeciale pouvoir;
     private List<MonstreInterface> monstres;
     private boolean isUtilisee = false;
 
-    public Champion(String nom, int id, int statVie, SpecialAbility pouvoir) {
+    public Champion(String nom, int id, int statVie, capaciteSpeciale pouvoir) {
         this.nom = nom;
         this.id = id;
         this.statVie = statVie;
-        this.specialAbility = pouvoir;
+        this.capaciteSpeciale = pouvoir;
         this.monstres = new ArrayList<>();
     }
 
@@ -40,11 +40,11 @@ public class Champion {
         this.statVie = statVie;
     }
 
-    public SpecialAbility getSpecialAbility() {
+    public capaciteSpeciale getCapaciteSpeciale() {
         return pouvoir;
     }
 
-    public void setSpecialAbility(SpecialAbility pouvoir) {
+    public void setCapaciteSpeciale(capaciteSpeciale pouvoir) {
         this.pouvoir = pouvoir;
     }
 
@@ -83,17 +83,17 @@ public class Champion {
     }
 
     public boolean capaciteSpeciale() {
-        if (!specialAbilityAvailable) {
+        if (!capaciteSpecialeAvailable) {
             System.out.println("Votre capacité spéciale n'est pas disponible.");
             return false;
         }
     
         // Utiliser la capacité spéciale
-        System.out.println("Vous utilisez votre capacité spéciale : " + specialAbilityName + " !");
+        System.out.println("Vous utilisez votre capacité spéciale : " + getCapaciteSpeciale() + " !");
         // Ici, vous pouvez ajouter le code qui implémente l'effet de la capacité spéciale
     
         // Marquer la capacité spéciale comme indisponible
-        specialAbilityAvailable = false;
+        capaciteSpecialeAvailable = false;
     
         return true;
     }
