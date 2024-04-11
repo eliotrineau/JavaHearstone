@@ -1,5 +1,5 @@
 Critère :
-Plateau 2 joueur s'affronte
+Plateau 2 joueurs s'affrontent
 Jouer caractériser par ID,Nom,Nb PV,Capacité Special.
 Joueur ne pas pas lui meme attaquer (sauf capacité spécial)
 Chaque joueur aura un ensemble de carte

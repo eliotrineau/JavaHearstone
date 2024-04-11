@@ -46,7 +46,7 @@ public class Card {
 
     public void setAttaque(int attaque) {
         this.attaque = attaque;
-    }
+    } 
 
     public int getPv() {
         return pv;
@@ -72,7 +72,7 @@ public class Card {
         this.pouvoir = pouvoir;
     }
 
-    public interface mort {//Selon le deck choissis la mort sera différentes et donc les messages de mort vont variés selon le deck, mais seront propre au unité d'un deck et a un groupe (les soigneurs sont un groupe)
+    public interface mort {//Selon le deck choisit la mort sera différente et donc les messages de mort vont variés selon le deck, mais seront propre aux unités d'un deck et a un groupe (les soigneurs sont un groupe)
         void mort();
     }
 
